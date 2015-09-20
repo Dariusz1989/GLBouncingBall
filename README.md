@@ -1,2 +1,4 @@
 # GLBouncingBall
-Simple project written in Qt/C++ and OpenGL
+Simple project written in Qt/C++ and OpenGL.
+
+Emil Petrov
