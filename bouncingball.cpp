@@ -110,7 +110,6 @@ void BouncingBall::paintGL()
 
 void BouncingBall::resizeGL(int w, int h)
 {
-    qDebug() << "Resize";
     this->glViewport(0, 0, w, h);
 
     QMatrix4x4 mtxProj;
