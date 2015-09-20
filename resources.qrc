@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>shaders/TexMap.fsh</file>
+        <file>shaders/TexMap.vsh</file>
+        <file>textures/ball.png</file>
+        <file>textures/ballTex.dds</file>
+    </qresource>
+</RCC>
