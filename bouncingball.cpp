@@ -179,15 +179,10 @@ void BouncingBall::buildbuffers()
 void BouncingBall::manageShaders()
 {
     this->m_pTexMapVS = new QOpenGLShader(QOpenGLShader::Vertex, this);
-    if(this->m_pTexMapVS->compileSourceFile(":/shaders/TexMap.vsh") == false)
-    {
-        qDebug() << "Problem";
-    }
+    this->m_pTexMapVS->compileSourceFile(":/shaders/TexMap.vsh");
+    
     this->m_pTexMapFS = new QOpenGLShader(QOpenGLShader::Fragment, this);
-    if(this->m_pTexMapFS->compileSourceFile(":/shaders/TexMap.fsh") == false)
-    {
-        qDebug() << "Problem";
-    }
+    this->m_pTexMapFS->compileSourceFile(":/shaders/TexMap.fsh");
 
     this->m_pTexMapSP = new QOpenGLShaderProgram(this);
     this->m_pTexMapSP->create();
